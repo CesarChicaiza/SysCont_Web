@@ -1,14 +1,14 @@
-import { AppPage } from './app.po';
+import { SysContWebPage } from './app.po';
 
-describe('sys-cont-web App', () => {
-  let page: AppPage;
+describe('sys-cont-web App', function() {
+  let page: SysContWebPage;
 
   beforeEach(() => {
-    page = new AppPage();
+    page = new SysContWebPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Welcome to app!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });
