@@ -18,9 +18,28 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
-      ],
-      "scripts": [],
+        "styles.css",
+        "plugins/font-awesome/css/font-awesome.min.css",
+		    "plugins/bootstrap/css/bootstrap.min.css",
+        "plugins/full-calendar/css/fullcalendar.css",
+		    "plugins/toastr/css/toastr.min.css",
+	  	  "plugins/pace/css/pace.css",
+  	  	"plugins/summer-note/summernote.css"
+      ],   
+      "scripts": [
+  		  "plugins/jquery/js/jquery.min.js",
+  	  	"plugins/jquery/js/jquery-ui.min.js",
+    		"plugins/bootstrap/js/bootstrap.min.js",
+	    	"plugins/moment/js/moment.min.js",
+        "plugins/full-calendar/js/fullcalendar.js",
+    		"plugins/full-calendar/js/locale/es.js",
+    		"plugins/notify/js/notify.min.js",
+    		"plugins/toastr/js/toastr.min.js",
+  		  "plugins/pace/js/pace.min.js",
+  		  "plugins/pace/js/configuration.js",
+	    	"plugins/jspdf/js/jspdf.min.js",
+	  	  "plugins/summer-note/summernote.min.js"
+	    ],
       "environments": {
         "source": "environments/environment.ts",
         "dev": "environments/environment.ts",

@@ -1,18 +1,32 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import 'rxjs/add/operator/map'
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+import {LoginComponent} from './security/login/login.component';
+import {MenuComponent} from './navigation/menu/menu.component';
+import {ModuleComponent} from './navigation/module/module.component';
+import { ContextInitializerComponent } from './navigation/context-initializer/context-initializer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    ContextInitializerComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
-    HttpModule
+    ReactiveFormsModule,
+    HttpModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
