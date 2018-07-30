@@ -1,0 +1,9 @@
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Repository.deps.json
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Repository.dll
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Repository.pdb
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.csprojResolveAssemblyReference.cache
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.csproj.CoreCompileInputs.cache
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.AssemblyInfoInputs.cache
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.AssemblyInfo.cs
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.dll
+C:\Users\FRAGGATI\Documents\Cesar\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.pdb

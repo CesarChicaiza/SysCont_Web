@@ -664,23 +664,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Cesarin\\.nuget\\packages\\": {},
+    "C:\\Users\\FRAGGATI\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
+    "restoreSettings": {
+      "hideWarningsAndErrors": true
+    },
     "restore": {
-      "projectUniqueName": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContRepository\\SysContRepository.csproj",
-      "projectName": "SysContRepository",
-      "projectPath": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContRepository\\SysContRepository.csproj",
-      "packagesPath": "C:\\Users\\Cesarin\\.nuget\\packages\\",
-      "outputPath": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContRepository\\obj\\",
+      "projectUniqueName": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContRepository\\SysCont_Repository.csproj",
+      "projectName": "SysCont_Repository",
+      "projectPath": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContRepository\\SysCont_Repository.csproj",
+      "packagesPath": "C:\\Users\\FRAGGATI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContRepository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Cesarin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\FRAGGATI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

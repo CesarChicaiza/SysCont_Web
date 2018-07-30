@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SysContRepository
+namespace SysCont_Repository
 {
     public class Class1
     {

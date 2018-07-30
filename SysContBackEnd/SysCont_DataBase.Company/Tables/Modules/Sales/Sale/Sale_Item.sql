@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Sale_Item]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)

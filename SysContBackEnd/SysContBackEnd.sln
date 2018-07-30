@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{8D1E5D32-EC21-4F8C-86EF-8E05EA306F13}"
 EndProject
@@ -11,9 +11,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{6FEEBF5D-9330-4524-8297-E7D90A3A7D98}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysContRepository", "SysContRepository\SysContRepository.csproj", "{DC334051-C8A2-4B3E-AFC3-F3D5A3CF008F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysCont_Repository", "SysContRepository\SysCont_Repository.csproj", "{DC334051-C8A2-4B3E-AFC3-F3D5A3CF008F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysContBusinessLogic", "SysContBusinessLogic\SysContBusinessLogic.csproj", "{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SysCont_BusinessLogic", "SysContBusinessLogic\SysCont_BusinessLogic.csproj", "{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{35969D91-7B12-45B5-A597-53AD2D9BED02}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SysCont_DataBase.Company", "SysCont_DataBase.Company\SysCont_DataBase.Company.sqlproj", "{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +33,12 @@ Global
 		{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +46,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DC334051-C8A2-4B3E-AFC3-F3D5A3CF008F} = {8D1E5D32-EC21-4F8C-86EF-8E05EA306F13}
 		{40BD8CFD-E07D-4C18-9633-02EDB8A97F0A} = {E6C3F635-4390-4096-8CF7-07A435BED26E}
+		{04B2153C-7FE7-4E3A-A5D7-086A39A72BAA} = {35969D91-7B12-45B5-A597-53AD2D9BED02}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4CAEACE3-6256-4E21-A869-80087E67FD10}

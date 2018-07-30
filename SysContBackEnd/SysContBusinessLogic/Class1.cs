@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SysContBusinessLogic
+namespace SysCont_BusinessLogic
 {
     public class Class1
     {
