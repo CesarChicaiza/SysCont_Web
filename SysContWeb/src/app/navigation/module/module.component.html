@@ -1,3 +1,65 @@
-<p>
-  module works!
-</p>
+
+<div class="module-page">
+  <div class="container box">
+      <div class="row">
+          <!--<div class="col-md-2" *ngFor="let sitemap of moduleSitemaps">
+              <button class="module-link" (click)="redirect(sitemap)">
+                      {{sitemap.name | translate}}
+                      <br><br>
+                      <div class="module-icon" [ngStyle]="{'background': sitemap.color}">
+                          <i class="{{sitemap.icon}} fa-lg"></i>
+                      </div>
+                   
+                      <span style="color:#21EAD7; font-size:10px">DISPONIBLE</span>
+                  </button>
+          </div>-->
+          <div class="col-md-2">
+            <button class="module-link" (click)="redirect()">
+              Ventas
+              <br><br>
+              <div class="module-icon">
+                  <i class="fa fa-money fa-lg"></i>
+              </div>
+            
+              <span style="color:#21EAD7; font-size:10px">DISPONIBLE</span>
+            </button>
+          </div>
+          <div class="col-md-2">
+            <button class="module-link" (click)="redirect()">
+              Compras
+              <br><br>
+              <div class="module-icon">
+                  <i class="fa fa-shopping-cart fa-lg"></i>
+              </div>
+            
+              <span style="color:#21EAD7; font-size:10px">DISPONIBLE</span>
+            </button>
+          </div>
+          <div class="col-md-2">
+            <button class="module-link" (click)="redirect()">
+              Inventario
+              <br><br>
+              <div class="module-icon">
+                  <i class="fa fa-industry fa-lg"></i>
+              </div>
+            
+              <span style="color:#21EAD7; font-size:10px">DISPONIBLE</span>
+            </button>
+          </div>
+          <div class="col-md-2">
+            <button class="module-link" (click)="redirect()">
+              Clientes
+              <br><br>
+              <div class="module-icon">
+                  <i class="fa fa-users fa-lg"></i>
+              </div>
+            
+              <span style="color:#21EAD7; font-size:10px">DISPONIBLE</span>
+            </button>
+          </div>
+      </div>
+      <br>
+
+  </div>
+
+</div>

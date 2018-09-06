@@ -1,1 +1,252 @@
-/* You can add global styles to this file, and also import other style files */
+/*=========================================================================
+    COMMON
+===========================================================================*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,500,600,700&subset=latin,latin-ext);
+
+html {
+ min-height: 100%;
+}
+
+
+body{
+    min-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 12px;
+    color: #656d78;
+    min-height: 100%;
+}
+
+.clear-header{
+    margin: 160px;
+}
+
+.pull-left{
+    float: left !important;
+}
+
+.pull-right{
+    float: right !important;
+}
+
+.page-subnav{
+    height: 90px;
+    margin: 50px 0 0 0;
+    padding: 20px 10px;
+    border-bottom: solid 1px #dfdfdf;
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.page-subnav-small{
+    height: 90px;
+    padding: 20px 10px;
+    border-bottom: solid 1px #dfdfdf;
+    background: #f2f2f2;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+
+div.page-title{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+/**/
+.toast {opacity: 1 !important;}
+.errorMessage{ color:red;}
+
+
+
+table.table{
+    font-size: 12px;
+    border-color: #E5E5E5;
+    border-width: 1px;
+}
+
+
+table.table th{
+    font-weight: 600;
+} 
+
+
+table.table td{
+    font-size: 12px;
+    font-weight: 300;
+} 
+
+
+input:invalid {border: 2px solid red;}
+div.list-page {position: absolute; top: 160px; height: 70%; min-width:100%;font-size: 12px;}
+div.page{position: absolute; top:140px;  left:0px; right: 0px; background:#505050; 
+            min-height: 100%; min-width:100%;font-size: 12px;}
+div.page-small{position: absolute; top:90px;  left:0px; right: 0px; background:#505050; 
+            min-height: 90%; min-width:100%;font-size: 12px;}
+div.dashboard-page{position: absolute; top:50px; padding-top:20px;   left:0px; right: 0px; background:#FFF; 
+            min-height: 100%; min-width:100%;font-size: 12px;}
+
+
+div.work-place{
+    border: solid 1px #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    padding-bottom: 45px !important;
+    background: #fff;
+    min-height: 400px;
+    margin: 20px 0px;
+}
+
+
+div.work-section-name{
+    padding: 40px 20px 10px 10px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: solid 1px #f2f2f2;
+}
+
+
+.form-control{
+    font-size: 11px !important;
+    height: 30px !important;
+    font-weight: 0 !important;
+    /*border:0px !important;*/
+    box-shadow: inset 0px 0px !important;
+    /*border-bottom: solid 1px #ccc !important;*/
+    /*border-radius: 0 !important;*/
+}
+
+.external-form-control{
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #f2f2f2;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 0;
+    margin: 5px 0px;
+}
+
+
+
+.icon{color:#2bad82;padding: 0 10px 0 0;}
+
+.btn-primary{background:#2bad82 !important;border: 1px solid #2bad82 !important;border-radius: 0px !important;}
+button.btn-add{background:none;border: 1px solid #ACACAC;}
+button.btn-remove{background: none;border: 0;font-size: 10px;}
+button.btn-link{border:none;background: #fff;font-size: 11px;}
+
+
+
+/*
+*
+*
+*
+*/
+
+div.login-container{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background: #33414e;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+div.login-box{
+    width: 400px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+
+div.login-logo{
+    height: 100px;
+}
+
+div.login-title
+{
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+div.login-body{
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+div.form-container{
+    margin-left: 15px;
+}
+
+div.login-body .form-control{
+    color: #CCC;
+    height: auto;
+    border: 0px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    line-height: 20px;
+    width: 95%;
+}
+
+
+div.login-footer{
+    margin-top: 215px;
+    padding: 10px;
+}
+
+div.login-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+div.login-footer a:hover{
+    text-decoration: underline;
+}
+
+
+button.btn-login{
+    background: #29b2e1;
+    width:100%;
+}
+
+
+button.btn-login:hover{
+    color: #fff;
+}
+
+
+a.btn-link{
+       color: #fff;
+        text-decoration: none;
+        font-size: 12px;
+}
+
+a.btn-link:hover{
+       color: #fff;
+        text-decoration: underline
+}
+
+
+
+
+/*
+*
+*
+*
+*/
+

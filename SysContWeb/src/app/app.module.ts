@@ -18,7 +18,8 @@ import { ContextInitializerComponent } from './navigation/context-initializer/co
   declarations: [
     AppComponent,
     LoginComponent,
-    ContextInitializerComponent
+    ContextInitializerComponent,
+    ModuleComponent
   ],
   imports: [
     BrowserModule,

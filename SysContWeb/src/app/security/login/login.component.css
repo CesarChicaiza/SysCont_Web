@@ -1,0 +1,21 @@
+div.company-item{
+    width:150px; 
+    text-align:center; 
+    float:left;
+}
+
+button.company-link{
+    background: transparent;
+    border: none;
+    margin-bottom: 30px;
+}
+
+div.company-icon{
+    border-radius: 35px;
+    padding: 20px 15px 10px 15px;
+    width: 60px;
+    height: 60px;
+    margin: 0px auto 10px auto;
+    border: 1px solid #525252;
+    color: #2bad82;
+}
