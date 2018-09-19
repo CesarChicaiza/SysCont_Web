@@ -27,7 +27,8 @@ import { ContextInitializerComponent } from './navigation/context-initializer/co
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    RouterModule
+    RouterModule,
+    NgModule
   ],
   providers: [],
   bootstrap: [AppComponent]
