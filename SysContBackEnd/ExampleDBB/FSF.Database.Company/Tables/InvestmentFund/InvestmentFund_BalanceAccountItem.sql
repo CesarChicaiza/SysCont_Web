@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[InvestmentFund_BalanceAccountItem]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [Amount]							DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [CurrentBalance]					DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [CurrentUnits]						DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[CurrentParticipation]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[PortfolioTotalPrice]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [PortfolioUnitPrice]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[PortfolioUnits]					DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[Date]								DATETIME			NOT NULL DEFAULT(GETDATE()),
+	[Type]								NVARCHAR(500)		NOT NULL,
+    [InvestmentFund_BalanceAccount_Id]	UNIQUEIDENTIFIER	NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_InvestmentFundBalanceAccountItem] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_InvestmentFundBalanceAccountItem_InvestmentFundBalanceAccount] FOREIGN KEY ([InvestmentFund_BalanceAccount_Id]) REFERENCES [InvestmentFund_BalanceAccount]([Id]) 
+)

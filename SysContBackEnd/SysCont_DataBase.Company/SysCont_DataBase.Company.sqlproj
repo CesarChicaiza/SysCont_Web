@@ -72,11 +72,12 @@
     <Folder Include="Tables\Modules\Configurations" />
     <Folder Include="Tables\Modules\Accounting" />
     <Folder Include="Tables\Modules\Accounting\Account" />
-    <Folder Include="Tables\Modules\Purchases\Provider" />
+    <Folder Include="Tables\Modules\Purchases\Supplier" />
     <Folder Include="Tables\Modules\Purchases\Purchase" />
     <Folder Include="Tables\Modules\Sales\Sale" />
     <Folder Include="Tables\Modules\Common" />
     <Folder Include="Tables\Modules\Common\Product" />
+    <Folder Include="Tables\Modules\Common\Catalog" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\Core\Employee\Employee.sql" />
@@ -86,11 +87,12 @@
     <Build Include="Tables\Core\Module\Module.sql" />
     <Build Include="Tables\Modules\Accounting\Account\Account.sql" />
     <Build Include="Tables\Modules\Accounting\Account\Account_Type.sql" />
-    <Build Include="Tables\Modules\Purchases\Provider\Provider.sql" />
+    <Build Include="Tables\Modules\Purchases\Supplier\Supplier.sql" />
     <Build Include="Tables\Modules\Purchases\Purchase\Purchase.sql" />
     <Build Include="Tables\Modules\Purchases\Purchase\Purchase_Item.sql" />
     <Build Include="Tables\Modules\Sales\Sale\Sale.sql" />
     <Build Include="Tables\Modules\Sales\Sale\Sale_Item.sql" />
     <Build Include="Tables\Modules\Common\Product\Product.sql" />
+    <Build Include="Tables\Modules\Common\Catalog\Bank.sql" />
   </ItemGroup>
 </Project>

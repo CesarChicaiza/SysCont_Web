@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[FixedAssetIncome]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [TransactionDate]					DATETIME			NOT NULL, 
+	[Sequential]						BIGINT				NULL, 
+	[Purchase_Id]						UNIQUEIDENTIFIER	NULL, 
+	--[InventoryTransfer_Id]				UNIQUEIDENTIFIER	NULL, 
+	[Company_Place_Id]					UNIQUEIDENTIFIER	NOT NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_FixedAssetIncome] PRIMARY KEY ([Id]),
+	CONSTRAINT [FK_FixedAssetIncome_Purchase] FOREIGN KEY ([Purchase_Id]) REFERENCES [Purchase]([Id]),
+	--CONSTRAINT [FK_FixedAssetIncome_InventoryTransfer] FOREIGN KEY ([InventoryTransfer_Id]) REFERENCES [InventoryTransfer]([Id]),
+	CONSTRAINT [FK_FixedAssetIncome_Warehouse] FOREIGN KEY ([Company_Place_Id]) REFERENCES [Company_Place]([Id]),
+)

@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[BankAccount_Movement]
+(
+	[Id]							UNIQUEIDENTIFIER	NOT NULL , 
+    [Sequential]					BIGINT				NULL, 
+	[BankAccount_Movement_Type_Id]	UNIQUEIDENTIFIER	NOT NULL,
+	[BankAccount_Id]				UNIQUEIDENTIFIER	NOT NULL,
+	[ResponsibleEmployee_Id]		uniqueidentifier	not null,
+	[TransactionDate]				date				not null,
+	[Amount]						decimal(18,2)		not null default 0,
+	[Bank_Id]						UNIQUEIDENTIFIER	NOT	NULL,
+	[VoucherNumber]					NVARCHAR(500)		NULL,
+	[CheckNumber]					NVARCHAR(500)		NULL,
+	[RowStatus]						INT					NOT NULL,
+	[Locked]						BIT					NOT NULL DEFAULT 0,
+	[Required]						BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]					UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]						UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]					DATETIME			NULL,
+	[ModifiedBy]					UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]					DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_BankAccountMovement] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_BankAccountMovement_BankAccount] FOREIGN KEY ([BankAccount_Id]) REFERENCES [BankAccount]([Id]), 
+    CONSTRAINT [FK_BankAccountMovement_BankAccountMovement] FOREIGN KEY ([BankAccount_Movement_Type_Id]) REFERENCES [BankAccount_Movement_Type]([Id]), 
+    CONSTRAINT [FK_BankAccountMovement_Employee] FOREIGN KEY ([ResponsibleEmployee_Id]) REFERENCES [Employee]([Id]), 
+    CONSTRAINT [FK_BankAccountMovement_Bank] FOREIGN KEY ([Bank_Id]) REFERENCES [Bank]([Id]), 
+
+)

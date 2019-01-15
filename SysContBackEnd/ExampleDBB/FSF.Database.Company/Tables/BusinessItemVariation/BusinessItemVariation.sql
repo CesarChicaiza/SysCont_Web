@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[BusinessItemVariation]
+(
+	[Id]							UNIQUEIDENTIFIER	NOT NULL, 
+    [Name]							NVARCHAR(300)		NOT NULL, 
+	[Price]							DECIMAL(18, 5)		NOT NULL, 
+	[ShortDescription]				NVARCHAR(max)		NULL, 
+	[FullDescription]				NVARCHAR(max)		NULL, 
+    [Code]							NVARCHAR(300)		NOT NULL,
+	[EcommercePublished]			bit NULL, 
+	[EcommerceShowOnHomePage]		bit NULL, 
+	[Stock]		                    DECIMAL(18, 5)      NOT NULL DEFAULT 0, 
+	[BusinessItem_Id]				uniqueidentifier	not null,
+	[UnitOfMeasure_Id]				UNIQUEIDENTIFIER	NULL,
+	[RowStatus]						int                 not null,
+	[Locked]						BIT					NOT NULL DEFAULT 0,
+	[Required]						BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]					uniqueidentifier	null,
+	[CreatedBy]						uniqueidentifier	null,
+	[CreatedDate]					datetime			null,
+	[ModifiedBy]					uniqueidentifier    null,
+	[ModifiedDate]					datetime            null, 
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_BusinessItemVariation] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_BusinessItemVariation_BusinessItem] FOREIGN KEY ([BusinessItem_Id]) REFERENCES [BusinessItem]([Id]), 
+	CONSTRAINT [FK_BusinessItem_UnitOfMeasure] FOREIGN KEY ([UnitOfMeasure_Id]) REFERENCES [UnitOfMeasure]([Id])
+)
