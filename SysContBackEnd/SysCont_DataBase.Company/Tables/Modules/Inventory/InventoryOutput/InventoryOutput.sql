@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[InventoryOutput]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [TransactionDate]					DATETIME			NOT NULL, 
+	[Sequential]						BIGINT				NULL, 
+	[SaleInvoice_Id]					UNIQUEIDENTIFIER	NULL, 
+	[Warehouse_Id]						UNIQUEIDENTIFIER	NOT NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_Output] PRIMARY KEY ([Id]),
+	CONSTRAINT [FK_Output_SaleInvoice] FOREIGN KEY ([SaleInvoice_Id]) REFERENCES [SaleInvoice]([Id]),
+	CONSTRAINT [FK_Output_Warehouse] FOREIGN KEY ([Warehouse_Id]) REFERENCES [Warehouse]([Id]),
+)

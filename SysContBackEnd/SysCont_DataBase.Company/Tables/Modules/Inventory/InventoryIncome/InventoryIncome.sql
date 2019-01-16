@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[InventoryIncome]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [TransactionDate]					DATETIME			NOT NULL, 
+	[Sequential]						BIGINT				NULL, 
+	[Purchase_Id]						UNIQUEIDENTIFIER	NULL, 
+	[InventoryTransfer_Id]				UNIQUEIDENTIFIER	NULL, 
+	[Warehouse_Id]						UNIQUEIDENTIFIER	NOT NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_Income] PRIMARY KEY ([Id]),
+	CONSTRAINT [FK_Income_Purchase] FOREIGN KEY ([Purchase_Id]) REFERENCES [Purchase]([Id]),
+	CONSTRAINT [FK_Income_InventoryTransfer] FOREIGN KEY ([InventoryTransfer_Id]) REFERENCES [InventoryTransfer]([Id]),
+	CONSTRAINT [FK_Income_Warehouse] FOREIGN KEY ([Warehouse_Id]) REFERENCES [Warehouse]([Id]),
+)
