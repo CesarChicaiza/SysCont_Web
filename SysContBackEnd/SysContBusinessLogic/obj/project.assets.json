@@ -664,26 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FRAGGATI\\.nuget\\packages\\": {},
+    "C:\\Users\\Cesarin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
-    "restoreSettings": {
-      "hideWarningsAndErrors": true
-    },
     "restore": {
-      "projectUniqueName": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContBusinessLogic\\SysCont_BusinessLogic.csproj",
+      "projectUniqueName": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContBusinessLogic\\SysCont_BusinessLogic.csproj",
       "projectName": "SysCont_BusinessLogic",
-      "projectPath": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContBusinessLogic\\SysCont_BusinessLogic.csproj",
-      "packagesPath": "C:\\Users\\FRAGGATI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FRAGGATI\\Documents\\Cesar\\SysContBackEnd\\SysContBusinessLogic\\obj\\",
+      "projectPath": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContBusinessLogic\\SysCont_BusinessLogic.csproj",
+      "packagesPath": "C:\\Users\\Cesarin\\.nuget\\packages\\",
+      "outputPath": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContBusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\FRAGGATI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Cesarin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
