@@ -1,0 +1,20 @@
+﻿CREATE TABLE [dbo].[FixedAssetOutput]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [TransactionDate]					DATETIME			NOT NULL, 
+	[Sequential]						BIGINT				NULL, 
+	[SaleInvoice_Id]					UNIQUEIDENTIFIER	NULL, 
+	[Company_Place_Id]					UNIQUEIDENTIFIER	NOT NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_FixedAssetOutput] PRIMARY KEY ([Id]),
+	CONSTRAINT [FK_FixedAssetOutput_SaleInvoice] FOREIGN KEY ([SaleInvoice_Id]) REFERENCES [SaleInvoice]([Id]),
+	CONSTRAINT [FK_FixedAssetOutput_Company_Place] FOREIGN KEY ([Company_Place_Id]) REFERENCES [Company_Place]([Id]),
+)

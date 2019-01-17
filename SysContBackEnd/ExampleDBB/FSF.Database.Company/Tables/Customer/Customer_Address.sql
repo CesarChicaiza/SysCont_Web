@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Customer_Address]
+(
+	[Id]							UNIQUEIDENTIFIER	NOT NULL, 
+    [Address]						NVARCHAR(500)		NOT NULL, 
+    [PostalCode]					NVARCHAR(50)		NULL, 
+	[Reference]						NVARCHAR(MAX)		NULL, 
+	[Shipping]						BIT					NOT NULL,
+	[Billing]						BIT					NOT NULL,
+	[Coordinates]					NVARCHAR(100)		NULL, 
+	[City_Id]						UNIQUEIDENTIFIER	NULL, 
+	[AddressType_Id]				UNIQUEIDENTIFIER	NULL, 
+	[Customer_Id]					UNIQUEIDENTIFIER	NULL, 
+	[RowStatus]						INT                 NOT NULL,
+	[Locked]						BIT					NOT NULL DEFAULT 0,
+	[Required]						BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]					UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]						UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]					DATETIME			NULL,
+	[ModifiedBy]					UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]					DATETIME			NULL, 
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_Customer_Address] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_Customer_Address_City] FOREIGN KEY ([City_Id]) REFERENCES [City]([Id]), 
+    CONSTRAINT [FK_AddressType_Id] FOREIGN KEY ([AddressType_Id]) REFERENCES [AddressType]([Id]), 
+    CONSTRAINT [FK_Customer_Address_Customer] FOREIGN KEY ([Customer_Id]) REFERENCES [Customer]([Id]) 
+)

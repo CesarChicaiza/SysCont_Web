@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>FSF.Database.Company</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{ea3c02e8-2548-44ed-bad6-daf41a77ad19}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql110DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>FSF.Database.Company</RootNamespace>
+    <AssemblyName>FSF.Database.Company</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <!-- VS10 without SP1 will not have VisualStudioVersion set, so do that here -->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <!-- Default to the v10.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Installation" />
+    <Folder Include="Installation\TestData" />
+    <Folder Include="StoreProcedures" />
+    <Folder Include="Triggers" />
+    <Folder Include="Installation\Workflows" />
+    <Folder Include="Tables" />
+    <Folder Include="Tables\Accounting" />
+    <Folder Include="Tables\Activity" />
+    <Folder Include="Tables\Bank" />
+    <Folder Include="Tables\BusinessItem" />
+    <Folder Include="Tables\BusinessOpportunity" />
+    <Folder Include="Tables\Campaign" />
+    <Folder Include="Tables\Case" />
+    <Folder Include="Tables\Catalogs" />
+    <Folder Include="Tables\Company" />
+    <Folder Include="Tables\Contract" />
+    <Folder Include="Tables\Customer" />
+    <Folder Include="Tables\Email" />
+    <Folder Include="Tables\Employee" />
+    <Folder Include="Tables\InvestmentFund" />
+    <Folder Include="Tables\Permission" />
+    <Folder Include="Tables\Project" />
+    <Folder Include="Tables\Role" />
+    <Folder Include="Tables\Sale" />
+    <Folder Include="Tables\SaleInvoice" />
+    <Folder Include="Tables\SaleInvoicePayment" />
+    <Folder Include="Tables\Supplier" />
+    <Folder Include="Tables\Tax" />
+    <Folder Include="Tables\Workflow" />
+    <Folder Include="Tables\Report" />
+    <Folder Include="Tables\Warehouse" />
+    <Folder Include="Tables\BillOfMaterial" />
+    <Folder Include="Tables\BusinessItemVariation" />
+    <Folder Include="Tables\Purchase" />
+    <Folder Include="Tables\Inventory" />
+    <Folder Include="Tables\Contact" />
+    <Folder Include="Tables\Manufacture" />
+    <Folder Include="Tables\Factory" />
+    <Folder Include="Tables\CustomerSegments" />
+    <Folder Include="Tables\MassiveEmail" />
+    <Folder Include="Tables\Service" />
+    <Folder Include="Tables\PurchaseInvoice" />
+    <Folder Include="Tables\InventoryIncome" />
+    <Folder Include="Tables\InventoryOutput" />
+    <Folder Include="Tables\InventoryTransfer" />
+    <Folder Include="Tables\Account" />
+    <Folder Include="Tables\AccountingEntry" />
+    <Folder Include="Tables\RemissionGuide" />
+    <Folder Include="Tables\PurchaseInvoicePayment" />
+    <Folder Include="Tables\Driver" />
+    <Folder Include="Tables\RetentionVoucher" />
+    <Folder Include="Tables\FixedAsset" />
+    <Folder Include="Tables\FixedAssetIncome" />
+    <Folder Include="Tables\FixedAssetOutput" />
+    <Folder Include="Tables\BankAccount" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Installation\Script.PostDeployment1.sql" />
+    <None Include="Installation\TestData\InvestmentFund_TD.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_MoneyCollect.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Efectividad.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Available.sql" />
+    <Build Include="StoreProcedures\Dashboard_Customer_ByProvince.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_CountMoneyCollect.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_SumMoneyCollect.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Count.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_AverageCollect.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_ByEmployee.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Campaign.sql" />
+    <Build Include="Triggers\Sale.sql" />
+    <None Include="Installation\Workflows\Customer_Welcome.sql" />
+    <Build Include="Triggers\Contract.sql" />
+    <Build Include="Triggers\BusinessOpportunity.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Publish_Casa.publish.xml" />
+    <None Include="Publish_Oficina.publish.xml" />
+    <None Include="Publish_Laptop.publish.xml" />
+    <None Include="Installation\TestData\Analytica.sql" />
+    <None Include="Publish_Azure.publish.xml" />
+    <None Include="Installation\Core_Catalogs.sql" />
+    <None Include="FSF.Database.Company.publish.xml" />
+    <None Include="Publish_Cesar.publish.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="FSF.Database.Company.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Accounting\Accounting_Account_BusinessItem.sql" />
+    <Build Include="Tables\Accounting\Accounting_FiscalYear.sql" />
+    <Build Include="Tables\Accounting\Accounting_Period.sql" />
+    <Build Include="Tables\Activity\Activity.sql" />
+    <Build Include="Tables\Activity\Activity_Participant.sql" />
+    <Build Include="Tables\Activity\Activity_PlaceType.sql" />
+    <Build Include="Tables\Activity\Activity_Task.sql" />
+    <Build Include="Tables\Activity\Activity_Topic.sql" />
+    <Build Include="Tables\Activity\Activity_Type.sql" />
+    <Build Include="Tables\Bank\Bank.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Attribute.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_AttributeOption.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Category.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Class.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Discount.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Promotion.sql" />
+    <Build Include="Tables\BusinessItem\BusinessItem_Type.sql" />
+    <Build Include="Tables\BusinessOpportunity\BusinessOpportunity.sql" />
+    <Build Include="Tables\BusinessOpportunity\BusinessOpportunity_Item.sql" />
+    <Build Include="Tables\Campaign\Campaign.sql" />
+    <Build Include="Tables\Campaign\Campaign_MassEmail.sql" />
+    <Build Include="Tables\Campaign\Campaign_ScheduleEmail.sql" />
+    <Build Include="Tables\Campaign\Campaign_Segment.sql" />
+    <Build Include="Tables\Campaign\Campaign_Type.sql" />
+    <Build Include="Tables\Case\Case.sql" />
+    <Build Include="Tables\Catalogs\AddressType.sql" />
+    <Build Include="Tables\Catalogs\City.sql" />
+    <Build Include="Tables\Catalogs\CommunicationOptionType.sql" />
+    <Build Include="Tables\Catalogs\Country.sql" />
+    <Build Include="Tables\Catalogs\Currency.sql" />
+    <Build Include="Tables\Catalogs\Gender.sql" />
+    <Build Include="Tables\Catalogs\Industry.sql" />
+    <Build Include="Tables\Catalogs\Language.sql" />
+    <Build Include="Tables\Catalogs\LegalIdType.sql" />
+    <Build Include="Tables\Catalogs\Ocupation.sql" />
+    <Build Include="Tables\Catalogs\Payment_Subtype.sql" />
+    <Build Include="Tables\Catalogs\Payment_Type.sql" />
+    <Build Include="Tables\Catalogs\Salutation.sql" />
+    <Build Include="Tables\Catalogs\SourceChannel.sql" />
+    <Build Include="Tables\Catalogs\State.sql" />
+    <Build Include="Tables\Catalogs\Territory.sql" />
+    <Build Include="Tables\Company\Company.sql" />
+    <Build Include="Tables\Company\Company_Place.sql" />
+    <Build Include="Tables\Company\Company_EmissionPoint.sql" />
+    <Build Include="Tables\Contract\Contract.sql" />
+    <Build Include="Tables\Contract\Contract_EndReason.sql" />
+    <Build Include="Tables\Contract\Contract_ProgressPaymentRule .sql" />
+    <Build Include="Tables\Contract\Contract_RecurrenceType.sql" />
+    <Build Include="Tables\Contract\Contract_RecurringPaymentRule.sql" />
+    <Build Include="Tables\Contract\Contract_Status.sql" />
+    <Build Include="Tables\Contract\Contract_Type.sql" />
+    <Build Include="Tables\Contract\Contract_TypeSection.sql" />
+    <Build Include="Tables\Customer\Customer.sql" />
+    <Build Include="Tables\Customer\Customer_Address.sql" />
+    <Build Include="Tables\Customer\Customer_Class.sql" />
+    <Build Include="Tables\Customer\Customer_ComunicationOption.sql" />
+    <Build Include="Tables\Customer\Customer_Contact.sql" />
+    <Build Include="Tables\Customer\Customer_PaymentOption.sql" />
+    <Build Include="Tables\Customer\Customer_Rating.sql" />
+    <Build Include="Tables\Customer\Customer_RelationshipType.sql" />
+    <Build Include="Tables\Customer\Customer_Type.sql" />
+    <Build Include="Tables\Email\EmailMessage.sql" />
+    <Build Include="Tables\Email\EmailTemplate.sql" />
+    <Build Include="Tables\Employee\Employee.sql" />
+    <Build Include="Tables\Employee\Employee_Activity.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_BalanceAccount.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_BalanceAccountItem.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_BalanceAccountManager.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_CustomerPortfolio.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_Maturity.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_Portfolio.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_RescueAudit.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_Statement.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_Transaction.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_TransactionType.sql" />
+    <Build Include="Tables\InvestmentFund\InvestmentFund_Valuation.sql" />
+    <Build Include="Tables\Permission\Permission.sql" />
+    <Build Include="Tables\Project\Project.sql" />
+    <Build Include="Tables\Project\Project_Sprint.sql" />
+    <Build Include="Tables\Project\Project_Status.sql" />
+    <Build Include="Tables\Project\Project_Storyboard.sql" />
+    <Build Include="Tables\Project\Project_Task.sql" />
+    <Build Include="Tables\Role\Role.sql" />
+    <Build Include="Tables\Sale\Sale.sql" />
+    <Build Include="Tables\Sale\Sale_Item.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice_Line.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice_LineTax.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice_ProgressProcess.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice_RecurrentProcess.sql" />
+    <Build Include="Tables\SaleInvoice\SaleInvoice_Tax.sql" />
+    <Build Include="Tables\SaleInvoicePayment\SaleInvoicePayment.sql" />
+    <Build Include="Tables\Supplier\Supplier.sql" />
+    <Build Include="Tables\Tax\Tax.sql" />
+    <Build Include="Tables\Tax\Tax_BusinessItemClass.sql" />
+    <Build Include="Tables\Tax\Tax_CustomerClass.sql" />
+    <Build Include="Tables\Workflow\Workflow.sql" />
+    <Build Include="Tables\Workflow\Workflow_Action.sql" />
+    <Build Include="Tables\Workflow\Workflow_Rule.sql" />
+    <Build Include="Tables\Workflow\Workflow_RuleCriteria.sql" />
+    <Build Include="Tables\Activity\Activity_Priority.sql" />
+    <Build Include="Tables\Activity\Activity_Status.sql" />
+    <Build Include="Tables\Report\Report.sql" />
+    <Build Include="Tables\Report\Report_Field.sql" />
+    <Build Include="Tables\BusinessOpportunity\BusinessOpportunity_State.sql" />
+    <Build Include="Tables\BusinessOpportunity\BusinessOpportunity_LossReason.sql" />
+    <Build Include="Tables\Employee\Employee_Parent.sql" />
+    <Build Include="Tables\Customer\Customer_Label.sql" />
+    <Build Include="Tables\Warehouse\Warehouse.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Count_Start_End.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_CountMoney_Start_End.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Count_ByStatus.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_CountMoney_ByStatus.sql" />
+    <Build Include="StoreProcedures\Dashboard_Suscription_Average.sql" />
+    <Build Include="Tables\Catalogs\UnitOfMeasure.sql" />
+    <Build Include="Tables\BillOfMaterial\BillOfMaterial.sql" />
+    <Build Include="Tables\Tax\Tax_Type.sql" />
+    <Build Include="Tables\Tax\Tax_SupplierClass.sql" />
+    <Build Include="Tables\Supplier\Supplier_Class.sql" />
+    <Build Include="Tables\BusinessItemVariation\BusinessItemVariation.sql" />
+    <Build Include="Tables\BusinessItemVariation\BusinessItemVariation_Picture.sql" />
+    <Build Include="Tables\BusinessItemVariation\BusinessItemVariation_Discount.sql" />
+    <Build Include="Tables\Purchase\Purchase.sql" />
+    <Build Include="Tables\Purchase\Purchase_Item.sql" />
+    <Build Include="Triggers\Purchase.sql" />
+    <Build Include="Tables\Inventory\Inventory.sql" />
+    <Build Include="Triggers\BusinessOpportunityItem.sql" />
+    <Build Include="Triggers\SaleItem.sql" />
+    <Build Include="Tables\Contact\Contact.sql" />
+    <Build Include="Tables\Contact\Contact_Address.sql" />
+    <Build Include="Tables\Contact\Contact_ComunicationOption.sql" />
+    <Build Include="Tables\Contact\Contact_Rating.sql" />
+    <Build Include="Tables\Manufacture\Manufacture.sql" />
+    <Build Include="Tables\Manufacture\Manufacture_Status.sql" />
+    <Build Include="Tables\Factory\Factory.sql" />
+    <Build Include="Triggers\Manufacture.sql" />
+    <Build Include="Tables\Sale\Sale_Place.sql" />
+    <Build Include="Tables\Email\Email.sql" />
+    <Build Include="Tables\Contact\Contact_Department.sql" />
+    <Build Include="Tables\CustomerSegments\CustomerSegments.sql" />
+    <Build Include="Tables\MassiveEmail\MassiveEmail.sql" />
+    <Build Include="Tables\MassiveEmail\MassiveEmail_State.sql" />
+    <Build Include="Tables\Email\Email_State.sql" />
+    <Build Include="Tables\Service\Service.sql" />
+    <Build Include="Tables\Service\Service_Type.sql" />
+    <Build Include="Tables\Service\Service_Comment.sql" />
+    <Build Include="Tables\Service\Service_Status.sql" />
+    <Build Include="Tables\Service\Service_Priority.sql" />
+    <Build Include="Triggers\Service.sql" />
+    <Build Include="Tables\BusinessItemVariation\BusinessItemVariation_Supplier.sql" />
+    <Build Include="Tables\Manufacture\Manufacture_Item.sql" />
+    <Build Include="Tables\Purchase\Purchase_Status.sql" />
+    <Build Include="Tables\PurchaseInvoice\PurchaseInvoice.sql" />
+    <Build Include="Tables\PurchaseInvoice\PurchaseInvoice_Line.sql" />
+    <Build Include="Tables\PurchaseInvoice\PurchaseInvoice_Tax.sql" />
+    <Build Include="Tables\PurchaseInvoice\PurchaseInvoice_LineTax.sql" />
+    <Build Include="Tables\InventoryIncome\InventoryIncome.sql" />
+    <Build Include="Tables\InventoryIncome\InventoryIncome_Detail.sql" />
+    <Build Include="Triggers\InventoryIncome.sql" />
+    <Build Include="Tables\InventoryOutput\InventoryOutput.sql" />
+    <Build Include="Tables\InventoryOutput\InventoryOutput_Detail.sql" />
+    <Build Include="Tables\InventoryTransfer\InventoryTransfer.sql" />
+    <Build Include="Tables\InventoryTransfer\InventoryTransfer_Status.sql" />
+    <Build Include="Triggers\InventoryOutput.sql" />
+    <Build Include="Tables\BillOfMaterial\BillOfMaterial_Detail.sql" />
+    <Build Include="Tables\Account\Account_Level1.sql" />
+    <Build Include="Tables\Account\Account_Level2.sql" />
+    <Build Include="Tables\Account\Account_Level3.sql" />
+    <Build Include="Tables\Account\Account_Level4.sql" />
+    <Build Include="Tables\Account\Account.sql" />
+    <Build Include="Tables\Account\Account_Type.sql" />
+    <Build Include="Tables\Accounting\BusinessItemAccountConfiguration.sql" />
+    <Build Include="Tables\AccountingEntry\AccountingEntry.sql" />
+    <Build Include="Tables\AccountingEntry\AccountingEntry_Detail.sql" />
+    <Build Include="Tables\Accounting\Accounting_Journal.sql" />
+    <Build Include="Tables\Role\Role_Action.sql" />
+    <Build Include="Tables\RemissionGuide\RemissionGuide.sql" />
+    <Build Include="Tables\RemissionGuide\RemissionGuide_Line.sql" />
+    <Build Include="Tables\InventoryTransfer\InventoryTransfer_Detail.sql" />
+    <Build Include="Tables\PurchaseInvoicePayment\PurchaseInvoicePayment.sql" />
+    <Build Include="Tables\Supplier\Supplier_PaymentOption.sql" />
+    <Build Include="Tables\Driver\Driver.sql" />
+    <Build Include="Tables\InventoryTransfer\InventoryTransferDetail_Inventory.sql" />
+    <Build Include="Tables\InventoryOutput\InventoryOutputDetail_Inventory.sql" />
+    <Build Include="Triggers\InventoryTransfer.sql" />
+    <Build Include="Tables\InventoryTransfer\InventoryTransfer_Reason.sql" />
+    <Build Include="Tables\Inventory\Inventory_Status.sql" />
+    <Build Include="Tables\RetentionVoucher\RetentionVoucher.sql" />
+    <Build Include="Tables\RetentionVoucher\RetentionVoucher_Line.sql" />
+    <Build Include="Tables\Tax\Tax_Retention.sql" />
+    <Build Include="Tables\Tax\Tax_RetentionType.sql" />
+    <Build Include="Tables\FixedAsset\FixedAsset.sql" />
+    <Build Include="Tables\FixedAsset\FixedAsset_Allocation.sql" />
+    <Build Include="Tables\FixedAsset\FixedAsset_Status.sql" />
+    <Build Include="Tables\FixedAssetIncome\FixedAssetIncome.sql" />
+    <Build Include="Tables\FixedAssetIncome\FixedAssetIncome_Detail.sql" />
+    <Build Include="Tables\FixedAssetOutput\FixedAssetOutput.sql" />
+    <Build Include="Tables\FixedAssetOutput\FixedAssetOutput_Detail.sql" />
+    <Build Include="Triggers\FixedAssetIncome.sql" />
+    <Build Include="Triggers\FixedAssetOutput.sql" />
+    <Build Include="Tables\BankAccount\BankAccount.sql" />
+    <Build Include="Tables\BankAccount\BankAccount_Type.sql" />
+    <Build Include="Tables\BankAccount\BankAccount_Movement.sql" />
+    <Build Include="Tables\BankAccount\BankAccount_Movement_Type.sql" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[BusinessOpportunity_Item]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+	[Number]							BIGINT				NULL, 
+	[Description]						NVARCHAR(MAX)		NULL,		
+	[Name]								NVARCHAR(MAX)		NULL,		
+	[FullDescription]					NVARCHAR(MAX)		NULL,		
+	[Quantity]							DECIMAL(18, 5)		NOT NULL, 
+	[UnitPrice]							DECIMAL(18, 5)		NULL, 
+	[CustomerUnitDiscountPercentage]	DECIMAL(18, 5)		NULL,
+	[SaleUnitDiscountPercentage]		DECIMAL(18, 5)		NULL, 
+	[TotalUnitDiscountPercentage]		DECIMAL(18, 5)		NULL, 
+	[TotalUnitDiscountAmount]			DECIMAL(18, 5)		NULL, 
+	[DiscountedUnitPrice]				DECIMAL(18, 5)		NULL, 
+	[TotalPrice]						DECIMAL(18, 5)		NULL,
+	[BusinessOpportunity_Id]			UNIQUEIDENTIFIER	NULL, 
+    [BusinessItemVariation_Id]					UNIQUEIDENTIFIER	NULL, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+
+    CONSTRAINT [PK_BusinessOpportunity_Item] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_BusinessOpportunityItem_BusinessOpportunity] FOREIGN KEY ([BusinessOpportunity_Id]) REFERENCES [BusinessOpportunity]([Id]), 
+    CONSTRAINT [FK_BusinessOpportunityItem_BusinessItemVariation] FOREIGN KEY ([BusinessItemVariation_Id]) REFERENCES [BusinessItemVariation]([Id])
+)

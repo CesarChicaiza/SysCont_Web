@@ -1,0 +1,33 @@
+﻿CREATE TABLE [dbo].[InvestmentFund_Transaction]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [Amount]							DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [CurrentBalance]					DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[CurrentUnits]						DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [CurrentParticipation]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[AvailableUnitsForRescue]			DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[PortfolioTotalPrice]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+    [PortfolioUnitPrice]				DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[PortfolioUnits]					DECIMAL(18, 5)		NOT NULL DEFAULT 0, 
+	[IncomeTax]							DECIMAL(18, 5)		NOT NULL DEFAULT(0),
+    [Date]								DATETIME			NOT NULL DEFAULT(GETDATE()),
+	[Customer_Id]						UNIQUEIDENTIFIER	NOT NULL,
+	[InvestmentFund_Portfolio_Id]		UNIQUEIDENTIFIER	NOT NULL,
+	[InvestmentFund_TransactionType_Id]	UNIQUEIDENTIFIER	NOT NULL,
+    [IsSynchronized]					BIT					NOT NULL DEFAULT 0, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_InvestmentFundTransaction] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_InvestmentFundTransaction_Customer] FOREIGN KEY ([Customer_Id]) REFERENCES [Customer]([Id]), 
+    CONSTRAINT [FK_InvestmentFundTransaction_Portfolio] FOREIGN KEY ([InvestmentFund_Portfolio_Id]) REFERENCES [InvestmentFund_Portfolio]([Id]) ON DELETE CASCADE, 
+    CONSTRAINT [FK_InvestmentFund_Transaction_TransactionType] FOREIGN KEY ([InvestmentFund_TransactionType_Id]) REFERENCES [InvestmentFund_TransactionType]([Id]), 
+	
+    
+)

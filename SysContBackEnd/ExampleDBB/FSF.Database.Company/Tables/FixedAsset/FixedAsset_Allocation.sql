@@ -1,0 +1,22 @@
+﻿CREATE TABLE [dbo].[FixedAsset_Allocation]
+(
+	[Id]							UNIQUEIDENTIFIER	NOT NULL, 
+	[FixedAsset_Id]					uniqueidentifier	not null,
+	[ResponsibleEmployee_Id]		uniqueidentifier	not null,
+	[DateTo]						datetime			not null,
+	[DateFrom]						datetime			not null,
+	[Comment]						nvarchar(500)		null,
+	[FixedAsset_Name]				nvarchar(500)		null,
+	[RowStatus]						int                 not null,
+	[Locked]						BIT					NOT NULL DEFAULT 0,
+	[Required]						BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]					uniqueidentifier	null,
+	[CreatedBy]						uniqueidentifier	null,
+	[CreatedDate]					datetime			null,
+	[ModifiedBy]					uniqueidentifier    null,
+	[ModifiedDate]					datetime            null, 
+    [Picture]						NVARCHAR(MAX)		NULL, 
+    CONSTRAINT [PK_FixedAssetAllocation] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_FixedAssetAllocation_FixedAsset] FOREIGN KEY ([FixedAsset_Id]) REFERENCES [FixedAsset]([Id]), 
+    CONSTRAINT [FK_FixedAssetAllocation_Employee] FOREIGN KEY ([ResponsibleEmployee_Id]) REFERENCES [Employee]([Id]), 
+)

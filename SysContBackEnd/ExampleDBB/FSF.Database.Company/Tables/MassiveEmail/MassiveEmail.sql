@@ -1,0 +1,30 @@
+﻿CREATE TABLE [dbo].[MassiveEmail]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+	[Name]								NVARCHAR(500)		NULL, 
+	[CustomerSegments_Id]				UNIQUEIDENTIFIER	NOT NULL,
+	[MassiveEmail_State_Id]				UNIQUEIDENTIFIER	NOT NULL,
+	[Subject]							NVARCHAR(500)		NULL, 
+    [Title]								NVARCHAR(500)		NULL, 
+    [Image]								NVARCHAR(max)		NULL, 
+    [Text]								NVARCHAR(1000)		NULL, 
+	[Signature]							NVARCHAR(500)		NULL, 
+	[SendDate]							DATETIME			NULL,
+	[Received]							INT					NULL DEFAULT 0, 
+	[Read]								INT					NULL DEFAULT 0, 
+	[Opened]							INT					NULL DEFAULT 0, 
+	[Rejected]							INT					NULL DEFAULT 0, 
+	[RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_MassiveEmail] PRIMARY KEY ([Id]),
+    CONSTRAINT [FK_MassiveEmail_CustomerSegments] FOREIGN KEY ([CustomerSegments_Id]) REFERENCES [CustomerSegments]([Id]),
+    CONSTRAINT [FK_MassiveEmail_MassiveEmail_State] FOREIGN KEY ([MassiveEmail_State_Id]) REFERENCES [MassiveEmail_State]([Id])
+
+)

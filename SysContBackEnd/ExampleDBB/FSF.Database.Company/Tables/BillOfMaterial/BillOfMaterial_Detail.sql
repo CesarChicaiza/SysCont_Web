@@ -1,0 +1,21 @@
+﻿CREATE TABLE [dbo].[BillOfMaterial_Detail]
+(
+	[Id]							UNIQUEIDENTIFIER	NOT NULL, 
+	[BusinessItemVariation_Name]	NVARCHAR(150)		NULL,
+	[BusinessItemVariation_Id]		UNIQUEIDENTIFIER	NOT NULL,
+	[BillOfMaterial_Id]				UNIQUEIDENTIFIER	NOT NULL,
+	[Quantity]						DECIMAL(18, 5)		NOT NULL, 
+	[IsVisible]						BIT					NOT NULL DEFAULT 0,
+	[RowStatus]						int                 not null,
+	[Locked]						BIT					NOT NULL DEFAULT 0,
+	[Required]						BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]					uniqueidentifier	null,
+	[CreatedBy]						uniqueidentifier	null,
+	[CreatedDate]					datetime			null,
+	[ModifiedBy]					uniqueidentifier    null,
+	[ModifiedDate]					datetime            null, 
+    [Picture]						NVARCHAR(MAX)		NULL, 
+    CONSTRAINT [PK_BillOfMaterialDetail] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_BillOfMaterialDetail_BusinessItem] FOREIGN KEY ([BusinessItemVariation_Id]) REFERENCES [BusinessItemVariation]([Id]),
+    CONSTRAINT [FK_BillOfMaterialDetail_BillOfMaterial] FOREIGN KEY ([BillOfMaterial_Id]) REFERENCES [BillOfMaterial]([Id]),
+)

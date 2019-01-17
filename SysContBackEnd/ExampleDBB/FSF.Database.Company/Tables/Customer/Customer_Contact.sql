@@ -1,0 +1,27 @@
+﻿CREATE TABLE [dbo].[Customer_Contact]
+(
+	[Id]								UNIQUEIDENTIFIER	NOT NULL, 
+    [Contact_Department_Id]				UNIQUEIDENTIFIER	NULL, 
+    [JobTitle]							NVARCHAR(50)		NULL, 
+    [Name]								NVARCHAR(250)		NULL, 
+    [Influencer]						BIT					NULL, 
+    [DecisionMaker]						BIT					NULL, 
+	[Start]								DATETIME			NULL, 
+    [End]								DATETIME			NULL, 
+	[Main]								BIT					NOT NULL DEFAULT 0,
+	[Customer_Id]						UNIQUEIDENTIFIER	NOT NULL, 
+    [Contact_Id]						UNIQUEIDENTIFIER	NOT NULL, 
+    [RowStatus]							INT					NOT NULL,
+	[Locked]							BIT					NOT NULL DEFAULT 0,
+	[Required]							BIT					NOT NULL DEFAULT 0,
+	[Employee_Id]						UNIQUEIDENTIFIER	NULL,
+	[CreatedBy]							UNIQUEIDENTIFIER	NULL,
+	[CreatedDate]						DATETIME			NULL,
+	[ModifiedBy]						UNIQUEIDENTIFIER	NULL,
+	[ModifiedDate]						DATETIME			NULL,
+    [Picture] NVARCHAR(MAX) NULL, 
+    CONSTRAINT [PK_CustomerContact] PRIMARY KEY ([Id]), 
+    CONSTRAINT [FK_CustomerContact_Customer] FOREIGN KEY ([Customer_Id]) REFERENCES [Customer]([Id]), 
+    CONSTRAINT [FK_CustomerContact_Contact_Id] FOREIGN KEY ([Contact_Id]) REFERENCES [Contact]([Id]),
+    CONSTRAINT [FK_CustomerContact_Departament_Id] FOREIGN KEY ([Contact_Department_Id]) REFERENCES [Contact_Department]([Id]) 
+)
