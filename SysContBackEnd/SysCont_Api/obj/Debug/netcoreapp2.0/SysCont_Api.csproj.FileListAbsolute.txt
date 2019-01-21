@@ -1,0 +1,8 @@
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\bin\Debug\netcoreapp2.0\SysCont_Api.deps.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\bin\Debug\netcoreapp2.0\SysCont_Api.runtimeconfig.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\bin\Debug\netcoreapp2.0\SysCont_Api.runtimeconfig.dev.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\bin\Debug\netcoreapp2.0\SysCont_Api.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\obj\Debug\netcoreapp2.0\SysCont_Api.csprojAssemblyReference.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\obj\Debug\netcoreapp2.0\SysCont_Api.csproj.CoreCompileInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\obj\Debug\netcoreapp2.0\SysCont_Api.AssemblyInfoInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Api\obj\Debug\netcoreapp2.0\SysCont_Api.AssemblyInfo.cs

@@ -1,0 +1,9 @@
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\bin\Debug\netcoreapp2.0\SysCont_BusinessLogic.deps.json
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\bin\Debug\netcoreapp2.0\SysCont_BusinessLogic.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\bin\Debug\netcoreapp2.0\SysCont_BusinessLogic.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.csprojAssemblyReference.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.csproj.CoreCompileInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.AssemblyInfoInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.AssemblyInfo.cs
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysContBusinessLogic\obj\Debug\netcoreapp2.0\SysCont_BusinessLogic.pdb

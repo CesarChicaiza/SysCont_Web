@@ -8,7 +8,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{04b2153c-7fe7-4e3a-a5d7-086a39a72baa}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql120DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -263,5 +263,11 @@
     <Build Include="Triggers\SaleItem.sql" />
     <Build Include="Triggers\Service.sql" />
     <None Include="Installation\Core_Catalogs.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SysCont_DataBase.Company.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Installation\Script.PostDeployment1.sql" />
   </ItemGroup>
 </Project>

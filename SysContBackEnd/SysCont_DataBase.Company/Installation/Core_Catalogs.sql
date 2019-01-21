@@ -76,12 +76,12 @@ INSERT INTO [dbo].[Campaign_Type]	(	[Id],										[Name],				[RowStatus]	)	VALU
 									(	'376E17DC-AE2C-4360-A47B-08E6E7B97A01',		'Evento',			1			)	,
 									(	'7245130D-00AA-4600-B37B-D588C8402069',		'F2F',				1			)
 									
-INSERT INTO [InvestmentFund_TransactionType]	(	[Id],											[Name],				[RowStatus],	[Required]	)	VALUES
-												(	'F14BB615-DE0C-4DCB-92F1-790810407EA0',		'Depósito',				1,				1			)	,
-												(	'403238D2-8155-42E2-881B-7B26D49BBF6F',		'Rescate',				1,				1			)	,
-												(	'37FBF241-09BA-4265-83C2-AE43B3B3858E',		'Ajuste',				1,				1			)	,
-												(	'5CB0E11A-5F32-4449-8507-89ECA27F2146',		'Gasto Administrativo',	1,				1			)	,
-												(	'4DF610D4-DE0C-4285-A11B-51B82EA2441B',		'Impuesto a la renta',	1,				1			)	
+--INSERT INTO [InvestmentFund_TransactionType]	(	[Id],											[Name],				[RowStatus],	[Required]	)	VALUES
+--												(	'F14BB615-DE0C-4DCB-92F1-790810407EA0',		'Depósito',				1,				1			)	,
+--												(	'403238D2-8155-42E2-881B-7B26D49BBF6F',		'Rescate',				1,				1			)	,
+--												(	'37FBF241-09BA-4265-83C2-AE43B3B3858E',		'Ajuste',				1,				1			)	,
+--												(	'5CB0E11A-5F32-4449-8507-89ECA27F2146',		'Gasto Administrativo',	1,				1			)	,
+--												(	'4DF610D4-DE0C-4285-A11B-51B82EA2441B',		'Impuesto a la renta',	1,				1			)	
 
 INSERT INTO [dbo].[AddressType]	(	[Id],									[Name],			[RowStatus]	)	VALUES
 								(	'404464AF-592B-4DCC-8FCB-17A5B73FEB6E',	'Domicilio',	1			)	,
@@ -863,11 +863,11 @@ INSERT INTO [dbo].[MassiveEmail_State]	(	[Id],									[Name],						[RowStatus]	
 										(	'C70ADD16-6BC0-4B88-88D6-127A47FBB6EF',	'Enviada',					1			,	1			)	
 
 
-INSERT INTO [dbo].[Email_State]	(	[Id],									[Name],						[RowStatus]	,	[Locked]	)	VALUES
-								(	'F57DC35F-91FD-491B-B29C-46B437299307',	'Borrador',					1			,	1			)	,
-								(	'17430003-8CB6-4F5E-B20D-F7CB9E37716B',	'Lista para enviar',		1			,	1			)	,
-								(	'C70ADD16-6BC0-4B88-88D6-127A47FBB6EF',	'Enviada',					1			,	1			)	,
-								(	'082A712F-8290-46C2-8831-F30C1DE9134E',	'Error al enviar',			1			,	1			)	
+--INSERT INTO [dbo].[Email_State]	(	[Id],									[Name],						[RowStatus]	,	[Locked]	)	VALUES
+--								(	'F57DC35F-91FD-491B-B29C-46B437299307',	'Borrador',					1			,	1			)	,
+--								(	'17430003-8CB6-4F5E-B20D-F7CB9E37716B',	'Lista para enviar',		1			,	1			)	,
+--								(	'C70ADD16-6BC0-4B88-88D6-127A47FBB6EF',	'Enviada',					1			,	1			)	,
+--								(	'082A712F-8290-46C2-8831-F30C1DE9134E',	'Error al enviar',			1			,	1			)	
 
 INSERT INTO [dbo].[Purchase_Status] (	[Id],									[Name],						[RowStatus],	[Locked]	)	VALUES
 									(	'C3C53849-B66B-416E-B683-2250B1FD986A',	'Aprobado',					1,				1			),
@@ -886,11 +886,7 @@ INSERT INTO [dbo].[Inventory_Status]	(	[Id],									[Name],						[RowStatus],	[
 										(	'0700761C-157A-4B9D-B41C-78B7FD8DC7DA',	'Reservado',				1,				1			),
 										(	'BF12478D-B7D6-4760-BF0A-9091AA48FA2A',	'Despachado',				1,				1			)
 
-INSERT INTO [dbo].[Inventory_Status]	(	[Id],									[Name],						[RowStatus],	[Locked]	)	VALUES
-										(	'C3C53849-B66B-416E-B683-2250B1FD986A',	'Disponible',				1,				1			),
-										(	'5CCBE063-364A-4C38-92BC-50B1EDC13847',	'En proceso',				1,				1			),
-										(	'0700761C-157A-4B9D-B41C-78B7FD8DC7DA',	'Reservado',				1,				1			),
-										(	'BF12478D-B7D6-4760-BF0A-9091AA48FA2A',	'Vendido',					1,				1			)
+
 
 INSERT INTO [dbo].[Tax_Type]	(	[Id],									[Name],			[Code],		[RowStatus],	[Locked]	) VALUES
 								(	'80D9E2FD-DBE5-4C25-AA40-EC11EF117DCB',	'IVA',			'2',		1,				1			),
