@@ -24,7 +24,7 @@ namespace SysCont_Repository.Entity
         public string Picture { get; set; }
 
         public virtual AddressType AddressType { get; set; }
-        public virtual City City { get; set; }
+        public virtual CityEntity City { get; set; }
         public virtual Contact Contact { get; set; }
     }
 }

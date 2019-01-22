@@ -24,7 +24,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual CompanyPlace CompanyPlace { get; set; }
+        public virtual CompanyPlaceEntity CompanyPlace { get; set; }
         public virtual ICollection<Manufacture> Manufacture { get; set; }
     }
 }

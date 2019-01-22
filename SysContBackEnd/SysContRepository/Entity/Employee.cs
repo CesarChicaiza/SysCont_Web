@@ -11,8 +11,8 @@ namespace SysCont_Repository.Entity
             ActivityStatus = new HashSet<ActivityStatus>();
             BankAccountMovement = new HashSet<BankAccountMovement>();
             BusinessOpportunity = new HashSet<BusinessOpportunity>();
-            City = new HashSet<City>();
-            Country = new HashSet<Country>();
+            City = new HashSet<CityEntity>();
+            Country = new HashSet<CountryEntity>();
             Customer = new HashSet<Customer>();
             EmployeeParentEmployee = new HashSet<EmployeeParent>();
             EmployeeParentEmployeeId1Navigation = new HashSet<EmployeeParent>();
@@ -45,15 +45,15 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual CompanyEmissionPoint CompanyEmissionPoint { get; set; }
-        public virtual CompanyPlace CompanyPlace { get; set; }
+        public virtual CompanyEmissionPointEntity CompanyEmissionPoint { get; set; }
+        public virtual CompanyPlaceEntity CompanyPlace { get; set; }
         public virtual Role Role { get; set; }
         public virtual ICollection<ActivityPriority> ActivityPriority { get; set; }
         public virtual ICollection<ActivityStatus> ActivityStatus { get; set; }
         public virtual ICollection<BankAccountMovement> BankAccountMovement { get; set; }
         public virtual ICollection<BusinessOpportunity> BusinessOpportunity { get; set; }
-        public virtual ICollection<City> City { get; set; }
-        public virtual ICollection<Country> Country { get; set; }
+        public virtual ICollection<CityEntity> City { get; set; }
+        public virtual ICollection<CountryEntity> Country { get; set; }
         public virtual ICollection<Customer> Customer { get; set; }
         public virtual ICollection<EmployeeParent> EmployeeParentEmployee { get; set; }
         public virtual ICollection<EmployeeParent> EmployeeParentEmployeeId1Navigation { get; set; }

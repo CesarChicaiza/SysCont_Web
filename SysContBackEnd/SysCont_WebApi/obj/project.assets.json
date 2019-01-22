@@ -4773,6 +4773,22 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "SysCont_Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.1",
+          "Microsoft.EntityFrameworkCore.Tools": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/SysCont_Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SysCont_Repository.dll": {}
+        }
       }
     }
   },
@@ -12764,6 +12780,11 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "SysCont_Repository/1.0.0": {
+      "type": "project",
+      "path": "../SysContRepository/SysCont_Repository.csproj",
+      "msbuildProject": "../SysContRepository/SysCont_Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12772,7 +12793,8 @@
       "Microsoft.EntityFrameworkCore.Design >= 2.2.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.2.1",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.1",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "SysCont_Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12804,7 +12826,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContRepository\\SysCont_Repository.csproj": {
+              "projectPath": "D:\\SourceCode\\SysCont\\SysContBackEnd\\SysContRepository\\SysCont_Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

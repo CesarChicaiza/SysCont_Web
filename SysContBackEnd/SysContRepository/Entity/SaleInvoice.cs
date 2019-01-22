@@ -79,7 +79,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual CompanyEmissionPoint CompanyEmissionPoint { get; set; }
+        public virtual CompanyEmissionPointEntity CompanyEmissionPoint { get; set; }
         public virtual Sale Sale { get; set; }
         public virtual SaleInvoiceRecurrentProcess SaleInvoiceRecurrentProcess { get; set; }
         public virtual ICollection<Inventory> Inventory { get; set; }

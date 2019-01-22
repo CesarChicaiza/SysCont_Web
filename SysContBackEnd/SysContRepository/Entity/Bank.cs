@@ -27,7 +27,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual Country Country { get; set; }
+        public virtual CountryEntity Country { get; set; }
         public virtual ICollection<BankAccount> BankAccount { get; set; }
         public virtual ICollection<BankAccountMovement> BankAccountMovement { get; set; }
         public virtual ICollection<CustomerPaymentOption> CustomerPaymentOption { get; set; }

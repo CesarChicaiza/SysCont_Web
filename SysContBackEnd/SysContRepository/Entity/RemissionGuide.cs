@@ -63,7 +63,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual CompanyEmissionPoint CompanyEmissionPoint { get; set; }
+        public virtual CompanyEmissionPointEntity CompanyEmissionPoint { get; set; }
         public virtual Driver Driver { get; set; }
         public virtual InventoryOutput InventoryOutput { get; set; }
         public virtual InventoryTransfer InventoryTransfer { get; set; }

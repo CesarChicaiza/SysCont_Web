@@ -4,10 +4,12 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using SysCont_Repository.Entity;
 
 namespace SysCont_WebApi
 {
@@ -24,6 +26,7 @@ namespace SysCont_WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc();
+            services.AddDbContext<CompanyContext>(x => x.UseSqlServer(Configuration.GetConnectionString("CompanyDB")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,6 +36,7 @@ namespace SysCont_WebApi
             {
                 app.UseDeveloperExceptionPage();
             }
+            
 
             app.UseMvc();
         }

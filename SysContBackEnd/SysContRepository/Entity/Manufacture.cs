@@ -37,7 +37,7 @@ namespace SysCont_Repository.Entity
         public virtual BusinessItemVariation BusinessItemVariation { get; set; }
         public virtual Factory Factory { get; set; }
         public virtual ManufactureStatus ManufactureStatus { get; set; }
-        public virtual UnitOfMeasure UnitOfMeasure { get; set; }
+        public virtual UnitOfMeasureEntity UnitOfMeasure { get; set; }
         public virtual Warehouse Warehouse { get; set; }
         public virtual ICollection<Inventory> Inventory { get; set; }
         public virtual ICollection<ManufactureItem> ManufactureItem { get; set; }

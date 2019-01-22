@@ -44,7 +44,7 @@ namespace SysCont_Repository.Entity
         public string Picture { get; set; }
 
         public virtual BusinessItem BusinessItem { get; set; }
-        public virtual UnitOfMeasure UnitOfMeasure { get; set; }
+        public virtual UnitOfMeasureEntity UnitOfMeasure { get; set; }
         public virtual ICollection<BusinessItemVariationDiscount> BusinessItemVariationDiscount { get; set; }
         public virtual ICollection<BusinessOpportunityItem> BusinessOpportunityItem { get; set; }
         public virtual ICollection<Inventory> Inventory { get; set; }

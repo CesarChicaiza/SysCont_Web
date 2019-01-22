@@ -24,7 +24,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual PaymentType PaymentType { get; set; }
+        public virtual PaymentTypeEntity PaymentType { get; set; }
         public virtual ICollection<CustomerPaymentOption> CustomerPaymentOption { get; set; }
         public virtual ICollection<SupplierPaymentOption> SupplierPaymentOption { get; set; }
     }

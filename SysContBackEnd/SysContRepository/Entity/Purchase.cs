@@ -31,7 +31,7 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual CompanyPlace CompanyPlace { get; set; }
+        public virtual CompanyPlaceEntity CompanyPlace { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual PurchaseStatus PurchaseStatus { get; set; }
         public virtual Sale Sale { get; set; }
