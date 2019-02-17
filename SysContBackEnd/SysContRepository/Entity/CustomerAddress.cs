@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Catalogs;
+using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -27,6 +29,6 @@ namespace SysCont_Repository.Entity
 
         public virtual AddressType AddressType { get; set; }
         public virtual CityEntity City { get; set; }
-        public virtual Customer Customer { get; set; }
+        public virtual CustomerEntity Customer { get; set; }
     }
 }

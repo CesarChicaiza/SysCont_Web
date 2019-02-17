@@ -9,3 +9,12 @@ D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\obj\Debug\netcoreapp2.0\SysC
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_WebApi.pdb
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\obj\Debug\netcoreapp2.0\SysCont_WebApi.dll
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\obj\Debug\netcoreapp2.0\SysCont_WebApi.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Framework.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Repository.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Repository.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Framework.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\obj\Debug\netcoreapp2.0\SysCont_WebApi.csproj.CopyComplete
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Engine.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Engine.Core.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_WebApi\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.pdb

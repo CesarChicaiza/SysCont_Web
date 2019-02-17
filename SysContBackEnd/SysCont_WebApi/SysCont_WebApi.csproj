@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Controllers\Company\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -13,6 +14,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +24,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SysContRepository\SysCont_Repository.csproj" />
+    <ProjectReference Include="..\SysCont_Engine.Core\SysCont_Engine.Core.csproj" />
   </ItemGroup>
 
 </Project>

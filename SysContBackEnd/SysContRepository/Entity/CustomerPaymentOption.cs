@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -30,7 +31,7 @@ namespace SysCont_Repository.Entity
         public string Picture { get; set; }
 
         public virtual Bank Bank { get; set; }
-        public virtual Customer Customer { get; set; }
+        public virtual CustomerEntity Customer { get; set; }
         public virtual PaymentSubtype PaymentSubtype { get; set; }
         public virtual ICollection<ContractRecurringPaymentRule> ContractRecurringPaymentRule { get; set; }
         public virtual ICollection<SaleInvoicePayment> SaleInvoicePayment { get; set; }

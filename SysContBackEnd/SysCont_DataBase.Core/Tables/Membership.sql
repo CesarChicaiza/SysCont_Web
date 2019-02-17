@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[Membership]
+(
+	[Id]								UNIQUEIDENTIFIEr	NOT NULL,
+	[Name]								NVARCHAR(50)        NOT NULL,
+	[Username]							nvarchar(50)		null,
+	[Password]							NVARCHAR(50)		NOT NULL,
+	[Email]								NVARCHAR(2500)		NOT NULL,
+	[IsApproved]						BIT                 NOT NULL,
+	[IsLockedOut]						BIT					NOT NULL,
+	[LastLoginDate]						DATETIME			NULL,
+	[LastPasswordChangedDate]			DATETIME			NULL,
+	[LastLockoutDate]					DATETIME			NULL,
+	[FailedPasswordAttemptCount]		INT                 NULL,
+	[ResetPasswordToken]				NVARCHAR(100)		NULL,
+	[TokenExpirationDate]				DATETIME			NULL,
+	[RowStatus]            int                  not null,
+	[Employee_Id]          uniqueidentifier     null,
+	[CreatedBy]            uniqueidentifier     null,
+    [CreatedDate]          datetime             null,
+	[ModifiedBy]           uniqueidentifier     null,
+	[ModifiedDate]         datetime             null, 
+	[Picture]			   nvarchar(max)        null,
+
+	CONSTRAINT UC_Email UNIQUE (Email),
+    CONSTRAINT [PK_Membership] PRIMARY KEY ([Id]), 
+)

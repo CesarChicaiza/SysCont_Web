@@ -1,0 +1,14 @@
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.deps.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Framework.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Framework.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.csprojAssemblyReference.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.csproj.CoreCompileInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.AssemblyInfoInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.AssemblyInfo.cs
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.csproj.CopyComplete
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.runtimeconfig.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.runtimeconfig.dev.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Repository.Core\obj\Debug\netcoreapp2.0\SysCont_Repository.Core.pdb

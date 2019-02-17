@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Company;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -7,7 +8,7 @@ namespace SysCont_Repository.Entity
     {
         public Currency()
         {
-            Company = new HashSet<Company>();
+            Company = new HashSet<CompanyEntity>();
         }
 
         public Guid Id { get; set; }
@@ -23,6 +24,6 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual ICollection<Company> Company { get; set; }
+        public virtual ICollection<CompanyEntity> Company { get; set; }
     }
 }

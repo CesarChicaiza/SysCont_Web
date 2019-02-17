@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Sale;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -28,6 +29,6 @@ namespace SysCont_Repository.Entity
         public string Picture { get; set; }
 
         public virtual BusinessItemVariation BusinessItemVariation { get; set; }
-        public virtual Sale Sale { get; set; }
+        public virtual SaleEntity Sale { get; set; }
     }
 }

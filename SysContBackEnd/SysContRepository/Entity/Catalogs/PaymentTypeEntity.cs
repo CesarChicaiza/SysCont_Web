@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using SysCont_Framework.DataAccess;
 
 namespace SysCont_Repository.Entity
 {

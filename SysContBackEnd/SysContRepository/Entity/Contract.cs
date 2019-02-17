@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Sale;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -38,7 +39,7 @@ namespace SysCont_Repository.Entity
         public virtual ContractEndReason ContractEndReason { get; set; }
         public virtual ContractStatus ContractStatus { get; set; }
         public virtual ContractType ContractType { get; set; }
-        public virtual Sale Sale { get; set; }
+        public virtual SaleEntity Sale { get; set; }
         public virtual ICollection<ContractProgressPaymentRule> ContractProgressPaymentRule { get; set; }
         public virtual ICollection<ContractRecurringPaymentRule> ContractRecurringPaymentRule { get; set; }
         public virtual ICollection<Service> Service { get; set; }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Sale;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -7,7 +8,7 @@ namespace SysCont_Repository.Entity
     {
         public SalePlace()
         {
-            Sale = new HashSet<Sale>();
+            Sale = new HashSet<SaleEntity>();
         }
 
         public Guid Id { get; set; }
@@ -22,6 +23,6 @@ namespace SysCont_Repository.Entity
         public DateTime? ModifiedDate { get; set; }
         public string Picture { get; set; }
 
-        public virtual ICollection<Sale> Sale { get; set; }
+        public virtual ICollection<SaleEntity> Sale { get; set; }
     }
 }

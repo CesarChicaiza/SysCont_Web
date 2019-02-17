@@ -1,6 +1,9 @@
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\bin\Debug\SysCont_DataBase.Company.dacpac
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\bin\Debug\SysCont_DataBase.Company.dll
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\bin\Debug\SysCont_DataBase.Company.pdb
-D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\SysCont_DataBase.Company.sqlprojAssemblyReference.cache
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\SysCont_DataBase.Company.dll
 D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\SysCont_DataBase.Company.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\Model.xml
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\refactor.xml
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\postdeploy.sql
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_DataBase.Company\obj\Debug\predeploy.sql

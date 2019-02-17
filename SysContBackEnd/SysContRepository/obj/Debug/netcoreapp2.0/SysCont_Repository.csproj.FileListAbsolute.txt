@@ -18,3 +18,6 @@ D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\S
 D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.pdb
 D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Repository.runtimeconfig.json
 D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Repository.runtimeconfig.dev.json
+D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Framework.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\bin\Debug\netcoreapp2.0\SysCont_Framework.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysContRepository\obj\Debug\netcoreapp2.0\SysCont_Repository.csproj.CopyComplete

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Company;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -8,7 +9,7 @@ namespace SysCont_Repository.Entity
         public Gender()
         {
             Contact = new HashSet<Contact>();
-            Customer = new HashSet<Customer>();
+            Customer = new HashSet<CustomerEntity>();
         }
 
         public Guid Id { get; set; }
@@ -24,6 +25,6 @@ namespace SysCont_Repository.Entity
         public string Picture { get; set; }
 
         public virtual ICollection<Contact> Contact { get; set; }
-        public virtual ICollection<Customer> Customer { get; set; }
+        public virtual ICollection<CustomerEntity> Customer { get; set; }
     }
 }

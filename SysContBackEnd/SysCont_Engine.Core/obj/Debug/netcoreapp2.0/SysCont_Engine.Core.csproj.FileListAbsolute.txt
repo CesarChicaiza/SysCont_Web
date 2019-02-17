@@ -1,0 +1,14 @@
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Framework.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Framework.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.csprojAssemblyReference.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.csproj.CoreCompileInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.AssemblyInfoInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.AssemblyInfo.cs
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Engine.Core.deps.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Engine.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Engine.Core.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\bin\Debug\netcoreapp2.0\SysCont_Repository.Core.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.csproj.CopyComplete
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Core\obj\Debug\netcoreapp2.0\SysCont_Engine.Core.pdb

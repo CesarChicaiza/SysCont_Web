@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -35,7 +36,7 @@ namespace SysCont_Repository.Entity
 
         public virtual Contact Contact { get; set; }
         public virtual Contract Contract { get; set; }
-        public virtual Customer Customer { get; set; }
+        public virtual CustomerEntity Customer { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual SaleInvoiceLine SaleInvoiceLine { get; set; }
         public virtual ServicePriority ServicePriority { get; set; }

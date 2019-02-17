@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -33,7 +34,7 @@ namespace SysCont_Repository.Entity
 
         public virtual Contact Contact { get; set; }
         public virtual ContactDepartment ContactDepartment { get; set; }
-        public virtual Customer Customer { get; set; }
+        public virtual CustomerEntity Customer { get; set; }
         public virtual ICollection<BusinessOpportunity> BusinessOpportunity { get; set; }
     }
 }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Company;
+using SysCont_Repository.Entity.Sales.Sale;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -34,7 +36,7 @@ namespace SysCont_Repository.Entity
         public virtual CompanyPlaceEntity CompanyPlace { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual PurchaseStatus PurchaseStatus { get; set; }
-        public virtual Sale Sale { get; set; }
+        public virtual SaleEntity Sale { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual ICollection<InventoryIncome> InventoryIncome { get; set; }
         public virtual ICollection<PurchaseInvoice> PurchaseInvoice { get; set; }

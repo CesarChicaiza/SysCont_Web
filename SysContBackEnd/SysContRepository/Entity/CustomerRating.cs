@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Sales.Customer;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -9,7 +10,7 @@ namespace SysCont_Repository.Entity
         {
             BusinessItemDiscount = new HashSet<BusinessItemDiscount>();
             BusinessItemVariationDiscount = new HashSet<BusinessItemVariationDiscount>();
-            Customer = new HashSet<Customer>();
+            Customer = new HashSet<CustomerEntity>();
         }
 
         public Guid Id { get; set; }
@@ -26,6 +27,6 @@ namespace SysCont_Repository.Entity
 
         public virtual ICollection<BusinessItemDiscount> BusinessItemDiscount { get; set; }
         public virtual ICollection<BusinessItemVariationDiscount> BusinessItemVariationDiscount { get; set; }
-        public virtual ICollection<Customer> Customer { get; set; }
+        public virtual ICollection<CustomerEntity> Customer { get; set; }
     }
 }

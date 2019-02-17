@@ -1,0 +1,9 @@
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\bin\Debug\netcoreapp2.0\SysCont_Engine.Company.deps.json
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\bin\Debug\netcoreapp2.0\SysCont_Engine.Company.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.csprojAssemblyReference.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.csproj.CoreCompileInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.AssemblyInfoInputs.cache
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.AssemblyInfo.cs
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\bin\Debug\netcoreapp2.0\SysCont_Engine.Company.pdb
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.dll
+D:\SourceCode\SysCont\SysContBackEnd\SysCont_Engine.Company\obj\Debug\netcoreapp2.0\SysCont_Engine.Company.pdb

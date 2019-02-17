@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SysCont_Repository.Entity.Company;
+using System;
 using System.Collections.Generic;
 
 namespace SysCont_Repository.Entity
@@ -28,7 +29,7 @@ namespace SysCont_Repository.Entity
 
         public virtual Bank Bank { get; set; }
         public virtual BankAccountType BankAccountType { get; set; }
-        public virtual Company Company { get; set; }
+        public virtual CompanyEntity Company { get; set; }
         public virtual ICollection<BankAccountMovement> BankAccountMovement { get; set; }
     }
 }
